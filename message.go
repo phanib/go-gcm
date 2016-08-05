@@ -4,6 +4,7 @@ package gcm
 type Message struct {
 	RegistrationIDs []string          `json:"registration_ids"`
 	CollapseKey     string            `json:"collapse_key,omitempty"`
+	Priority     	string            `json:"priority,omitempty"`
 	DelayWhileIdle  bool              `json:"delay_while_idle,omitempty"`
 	Data            map[string]string `json:"data,omitempty"`
 	TimeToLive      int               `json:"time_to_live,omitempty"`
